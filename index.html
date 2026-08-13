@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- navbar -->
+    <header>
+        <div class="navbar">
+            <!-- LOGO -->
+            <div class="logo border">
+            |  amazon
+            </div>
+            <!-- ADDRESS -->
+            <div class="address border">
+                <small>
+                    Deliver to
+                </small>
+                <strong>
+                    📍 India
+                </strong>
+            </div>
+            <!-- SEARCH -->
+            <div class="searchbar">
+                <select class="select-search">
+                    <option>
+                        All
+                    </option>
+                </select>
+                <input type="text" placeholder="Search Amazon" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <!-- ACCOUNT -->
+            <div class="nav-item border">
+                <small>
+                    Hello, sign in
+                </small>
+                <strong>
+                    Account & Lists
+                </strong>
+            </div>
+            <!-- ORDERS -->
+            <div class="nav-item border">
+                <small>
+                    Returns
+                </small>
+                <strong>
+                    & Orders
+                </strong>
+            </div>
+            <!-- CART -->
+            <div class="nav-cart border" onclick="openCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">
+                    0
+                </span>
+                Cart
+            </div>
+        </div>
+        <!-- PANEL -->
+        <div class="panel">
+            <span>
+                ☰ All
+            </span>
+            <span>Fresh </span>
+            <span>
+                Best Sellers
+            </span>
+            <span>
+                Today's Deals
+            </span>
+            <span>
+                Mobiles
+            </span>
+            <span>
+                Electronics
+            </span>
+            <span>
+                Fashion
+            </span>
+            <div id="aug15">
+            <span style="color: #E37434">GreatFreedom </span>
+            <span style="color: white;">|</span>
+            <span style="color: green;">Ends Tonight</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO  -->
+    <section class="hero">
+       
+        <div class="hero-content">
+            <h1>
+                Welcome to Amazon </h1>
+
+            <p>
+                Great deals on your favourite products</p>
+            <button onclick="scrollToProducts()">
+                Shop Now
+            </button>
+        </div>
+    </section>
+    <!-- product -->
+    <section class="products-section" id="productsSection">
+        <h1>
+            Results
+        </h1>
+
+        <p class="subtitle">
+            Buy the product this page.
+        </p>
+
+        <div class="products-container" id="productsContainer">
+        </div>
+    </section>
+   <!-- sidebar -->
+    <div class="cart-overlay" id="cartOverlay" onclick="closeCart()">
+    </div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <!-- CART HEADER -->
+        <div class="cart-header">
+            <h2>
+                Shopping Cart 🛒
+            </h2>
+            <button onclick="closeCart()">
+                ✕
+            </button>
+        </div>
+        <!-- CART ITEMS -->
+        <div class="cart-items" id="cartItems">
+        </div>
+        <!-- CART FOOTER -->
+        <div class="cart-footer">
+            <div class="total">
+                <span>
+                    Total:
+                </span>
+                <strong id="totalPrice">
+                    ₹0
+                </strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">
+                Proceed to Buy
+            </button>
+        </div>
+    </div>
+
+    <!-- sign section -->
+     <!-- Personalized Recommendation -->
+<section class="recommendation-section">
+    <h2>See personalized recommendations</h2>
+    <button class="sign-in-btn" onclick="signIn()">
+        Sign in
+    </button>
+    <p class="new-customer">
+        New customer?
+        <a href="#" onclick="startHere(event)">Start here.</a>
+    </p>
+</section>
+<!-- Back to Top -->
+<div class="back-to-top" onclick="backToTop()">
+    Back to top
+</div>
+    <!-- footer -->
+      <footer>
+   
+    <div class="footer-panel2">
+      <ul>
+        <p> Get to Know Us</p>
+        <a href="#">About Amazon</a>
+        <a href="#">Careers</a>
+        <a href="#">Press Releases</a>
+        <a href="#">Amazon Scien</a>
+
+
+      </ul>
+      <ul>
+        <p> Connect with Us</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">instagram</a>
+
+
+      </ul>
+      <ul>
+        <p> make money with us</p>
+        <a href="#"> Sell on Amazon</a>
+        <a href="#">Sell under Amazon Accelerator</a>
+        <a href="#">Protect and Build Your Brand</a>
+        <a href="#">Amazon Global Selling</a>
+        <a href="#">Supply to Amazon</a>
+        <a href="#">Become an Affiliate</a>
+        <a href="#">Fulfilment by Amazon</a>
+        <a href="#">Advertise Your Products</a>
+        <a href="#">Amazon Pay on Merchants </a>
+
+
+      </ul>
+
+      <ul>
+        <p>Let Us Help You</p>
+        <a href="#"> Your Account</a>
+        <a href="#">Returns Centre</a>
+        <a href="#">Recalls and Product Safety Alerts</a>
+        <a href="#">100% Purchase Protection</a>
+        <a href="#">Amazon App Download</a>
+        <a href="#">Help </a>
+      </ul>
+    </div>
+    <hr>
+
+  </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>
