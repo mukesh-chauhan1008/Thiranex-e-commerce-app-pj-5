@@ -3,7 +3,7 @@
 const products = [
     {
         id: 1,
-        name: "Zeno 100 Lite Smartphone | 4GB RAM | 64GB Storage | 5000mAh Battery",
+        name: "Generic Smart phone | 4GB RAM | ",
         price: 5999,
         image:
             "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=600&q=80",
@@ -11,16 +11,16 @@ const products = [
 
     {
         id: 2,
-        name: "Fastest HD Stick | 1,500+ Apps | Voice Remote | Directly Powered by Your TV",
-        price: 199,
+        name: "Pepsi 500ml|Energy drink",
+        price:39,
         image:
-            "https://m.media-amazon.com/images/I/613PE3DsNUL._SY679_.jpg",
+            "https://images.unsplash.com/photo-1553456558-aff63285bdd1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D",
     },
 
     {
         id: 3,
         name: "Wireless Bluetooth Headphones | Noise Cancellation | Long Battery Life",
-        price: 1999,
+        price: 1999 ,
         image:
             "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
     },
@@ -51,7 +51,7 @@ const products = [
 ];
 
 
-// ================= CART =================
+// CART 
 
 let cart = JSON.parse(localStorage.getItem("shopingCart")) || [];
 
@@ -115,7 +115,7 @@ function displayProducts(productList = products) {
                         class="buy-now"
                         onclick="buyNow(${product.id})"
                     >
-                        Buy Now
+                        Buy Now 
                     </button>
 
                 </div>
